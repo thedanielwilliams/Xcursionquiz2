@@ -95,8 +95,9 @@ const ResultScreen = ({ score, totalQuestions, onRestart }) => {
                     </a>
 
                     <a
-                        href="#"
-                        onClick={(e) => e.preventDefault()} // Placeholder link
+                        href="https://xcursions.ng/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="block w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white py-4 rounded-xl font-bold text-lg hover:from-orange-500 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 mt-6"
                     >
                         <div className="flex items-center justify-center gap-2">
