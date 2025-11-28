@@ -1,5 +1,5 @@
 import React from 'react';
-import { Share2, RefreshCw, Plane } from 'lucide-react';
+import { Share2, Plane } from 'lucide-react';
 
 const ResultScreen = ({ score, totalQuestions, onRestart }) => {
     const percentage = (score / totalQuestions) * 100;
@@ -84,21 +84,15 @@ const ResultScreen = ({ score, totalQuestions, onRestart }) => {
                 </div>
 
                 <div className="space-y-4">
-                    <button
-                        onClick={handleShare}
-                        className="w-full flex items-center justify-center gap-2 bg-indigo-50 text-indigo-600 py-3 rounded-xl font-bold hover:bg-indigo-100 transition-colors"
+                    <a
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`I scored ${score}/${totalQuestions} on the Countries & Cities Quiz! Can you beat my score? 🌍✈️`)}&url=${encodeURIComponent('https://thedanielwilliams.github.io/Xcursionquiz2/')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full flex items-center justify-center gap-2 bg-[#1DA1F2] text-white py-3 rounded-xl font-bold hover:bg-[#1a91da] transition-colors"
                     >
                         <Share2 className="w-5 h-5" />
-                        Share Result
-                    </button>
-
-                    <button
-                        onClick={onRestart}
-                        className="w-full flex items-center justify-center gap-2 bg-gray-100 text-gray-700 py-3 rounded-xl font-bold hover:bg-gray-200 transition-colors"
-                    >
-                        <RefreshCw className="w-5 h-5" />
-                        Restart Quiz
-                    </button>
+                        Share Result on Twitter
+                    </a>
 
                     <a
                         href="#"
