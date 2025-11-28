@@ -85,7 +85,7 @@ const ResultScreen = ({ score, totalQuestions, onRestart }) => {
 
                 <div className="space-y-4">
                     <a
-                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`I scored ${score}/${totalQuestions} on the Countries & Cities Quiz! Can you beat my score? 🌍✈️`)}&url=${encodeURIComponent('https://thedanielwilliams.github.io/Xcursionquiz2/')}`}
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`I scored ${score}/${totalQuestions} on the Countries & Cities Quiz! Can you beat my score? 🌍✈️`)}&url=${encodeURIComponent('https://xcursionquiz2.vercel.app/')}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full flex items-center justify-center gap-2 bg-[#1DA1F2] text-white py-3 rounded-xl font-bold hover:bg-[#1a91da] transition-colors"
